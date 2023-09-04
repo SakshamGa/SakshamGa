@@ -76,7 +76,7 @@
    
 **Hope I get a Chance to Help you too 🙏🙏**
 
-### MAIL : **reyanshstar2001@gmail.com** (24*7 Online)
+### MAIL : **Sakshamgairola21@gmail.com** (24*7 Online)
    
 ### Behance Profile : [LINK](https://www.behance.net/reyanshstar)
 
