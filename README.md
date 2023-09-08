@@ -51,25 +51,8 @@
 
 <br><br>
 
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=virusinlinux&show_icons=true&locale=en&layout=compact" alt="virusinlinux" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=virusinlinux&show_icons=true&locale=en" alt="virusinlinux" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=virusinlinux&" alt="virusinlinux" /></p>
-
-
  
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/https://www.buymeacoffee.com/kumpz111O"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="https://www.buymeacoffee.com/kumpz111O" /></a></p><br><br>
 
-### 📈 Github Stats
-<table width="100%">
-  <tr>
-    <td>
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=virusinlinux&show_icons=true&hide_border=true&theme=prussian"/> </td>
- <td> <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=virusinlinux&show_icons=true&hide_border=true&layout=compact&langs_count=8&theme=prussian"/> </td>
-  </tr>
- <table>
    
    
 **Hope I get a Chance to Help you too 🙏🙏**
