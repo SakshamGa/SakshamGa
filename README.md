@@ -3,7 +3,7 @@
 
 <h1 align="center"> Hello all <img src="https://media.giphy.com/media/SuHqTMwqKJGhsFbS2D/giphy.gif" width="40px"> , I'm Saksham Gairola <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> ! </h1>
 
-<h3 align="center">I'm a Berozgaar from India <img src="https://media.giphy.com/media/kwbcxR63xiCTA3rAjN/giphy.gif" width="50px"></h3>
+<h3 align="center">I'm  -------)Designer((Developer) <img src="https://media.giphy.com/media/kwbcxR63xiCTA3rAjN/giphy.gif" width="50px"></h3>
 <h3 align="center">Completed Graduation. </h3>
 
 <p align="center">
