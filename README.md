@@ -1,67 +1,489 @@
-[![MasterHead](https://camo.githubusercontent.com/0850a9b90bf720b08cafe764aea52d8cf2cc7048d4f8080297e8988b76bb08b8/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f7375706572666f6c696f2f696d6167652f75706c6f61642f76313632303638393937392f36383734373437303733336132663266363932653730363936653639366436373265363336663664326636663732363936373639366536313663373332663633333632663333333332663633333232663633333633333333363333323330363536343635333833323636333036353330363336353634333736343335333733303634363236353333363133313636333332653637363936365f796a756832732e676966)](https://rishabhpal.io)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saksham Gairola | Software Engineer & Designer</title>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-color: #050505;
+            --surface-color: #111;
+            --text-primary: #f0f0f0;
+            --text-secondary: #a0a0a0;
+            --accent-glow: #00ffcc;
+            --accent-secondary: #7000ff;
+            --card-border: rgba(255, 255, 255, 0.1);
+        }
 
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            scroll-behavior: smooth;
+        }
 
-<h1 align="center"> Hello all <img src="https://media.giphy.com/media/SuHqTMwqKJGhsFbS2D/giphy.gif" width="40px"> , I'm Saksham Gairola <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30px"> ! </h1>
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            overflow-x: hidden;
+        }
 
-<h3 align="center">I'm  -------)Designer((Developer) <img src="https://media.giphy.com/media/kwbcxR63xiCTA3rAjN/giphy.gif" width="50px"></h3>
-<h3 align="center">Completed Graduation. </h3>
+        /* --- Background Animation --- */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: -1;
+            background: radial-gradient(circle at 15% 50%, rgba(112, 0, 255, 0.08), transparent 25%),
+                        radial-gradient(circle at 85% 30%, rgba(0, 255, 204, 0.08), transparent 25%);
+            animation: backgroundShift 20s infinite alternate linear;
+        }
 
-<p align="center">
-<img src="https://media.giphy.com/media/ucmzLKrx1Ae5RGZ4cA/giphy.gif" alt="Coder GIF" text-align="center" width="500" height="300" >
-</p>
+        @keyframes backgroundShift {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
 
-- ⚡  I'm curently Django Developer at Bs Happy Technologies.
-- 🔭 I’m currently working on Python Automation and Web Development.
-- 🌱 I’m currently learning Blockchain NFT and Augmented Reality. 
-- 👯 I’m looking to collaborate on Different kinds of Software Projects.
-- 💬 Ask me about Help in College Projects, Programming and Development.
-- ⚡ Fun fact: I always reply mails in minutes.
-- 😄 Motivation: Happy Students, contributing towards community and learning daily. 
-- 🌱 Ask Freely, I don't bite! 
+        /* --- Layout & Typography --- */
+        section {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5rem 10%;
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s ease-out;
+        }
 
-<p align="center">
-<img src="https://media.giphy.com/media/9LQHvkbIzTSLe/giphy.gif" alt="Coder GIF" align="center" width="500" height="300" >
-</p>
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-## 📫 How to reach me
--    WhatsApp: **+91 703** (Helping 24*7) **[CHAT]()** 
--    Behance: **[Behance]([https://www.behance.net/reyanshstar](https://www.behance.net/a4583ff3))**
--    LinkedIn: **[LinkedIn](https://www.linkedin.com/in/saksham-gairola-963881194)**
--    Gmail: **Sakshamgairola21@gmail.com**
+        h2.section-title {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(90deg, var(--text-primary), var(--text-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
 
-<p  align="right">
- <img src="https://media.giphy.com/media/QuDgW7dXQfCZiWVXD4/giphy.gif" alt="Coder GIF" width="600" height="200">
-</p>
-<br>
-### My Portfolio Deck🔭
-<div style="padding: 20px 0px;"><img src="./qwerty.png" alt=""></div> 
- 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=virusinlinux&label=Profile%20views&color=0e75b6&style=flat" alt="virusinlinux" /> </p>
+        h2.section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background: var(--accent-glow);
+            box-shadow: 0 0 10px var(--accent-glow);
+        }
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=virusinlinux" alt="virusinlinux" /></a> </p>
+        /* --- Hero Section --- */
+        .hero {
+            text-align: center;
+            opacity: 1; /* Hero is visible immediately */
+            transform: translateY(0);
+        }
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://www.linkedin.com/in/saksham-gairola-963881194" target="blank">
- 
+        .hero h1 {
+            font-size: 5vw;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-glow), var(--accent-secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 30px rgba(0, 255, 204, 0.2);
+        }
 
-<br>
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://www.arduino.cc/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/arduino-1.svg" alt="arduino" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://babeljs.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/babeljs/babeljs-icon.svg" alt="babel" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://www.blender.org/" target="_blank" rel="noreferrer"> <img src="https://download.blender.org/branding/community/blender_community_badge_white.svg" alt="blender" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://bulma.io/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/gilbarbara/logos/804dc257b59e144eaca5bc6ffd16949752c6f789/logos/bulma.svg" alt="bulma" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://canvasjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/Hardik0307/Hardik0307/master/assets/canvasjs-charts.svg" alt="canvasjs" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://codeigniter.com" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/codeigniter.svg" alt="codeigniter" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://www.framer.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/framer/framer-icon.svg" alt="framer" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.gtk.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/7/71/GTK_logo.svg" alt="gtk" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://materializecss.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/prplx/svg-logos/5585531d45d294869c4eaab4d7cf2e9c167710a9/svg/materialize.svg" alt="materialize" width="40" height="40"/> </a> <a href="https://www.mathworks.com/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="matlab" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.oracle.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/oracle/oracle-original.svg" alt="oracle" width="40" height="40"/> </a> <a href="https://pandas.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/2ae2a900d2f041da66e950e4d48052658d850630/icons/pandas/pandas-original.svg" alt="pandas" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://github.com/puppeteer/puppeteer" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pptrdev/pptrdev-official.svg" alt="puppeteer" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://pytorch.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pytorch/pytorch-icon.svg" alt="pytorch" width="40" height="40"/> </a> <a href="https://www.qt.io/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Qt_logo_2016.svg" alt="qt" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://sass-lang.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="sass" width="40" height="40"/> </a> <a href="https://scikit-learn.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg" alt="scikit_learn" width="40" height="40"/> </a> <a href="https://seaborn.pydata.org/" target="_blank" rel="noreferrer"> <img src="https://seaborn.pydata.org/_images/logo-mark-lightbg.svg" alt="seaborn" width="40" height="40"/> </a> <a href="https://www.sketch.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/sketchapp/sketchapp-icon.svg" alt="sketch" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.tensorflow.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tensorflow/tensorflow-icon.svg" alt="tensorflow" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> <a href="https://www.wxwidgets.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/b/bb/WxWidgets.svg" alt="wx_widgets" width="40" height="40"/> </a> <a href="https://www.adobe.com/products/xd.html" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="40" height="40"/> </a> </p>
+        .typewriter-container {
+            font-size: 2rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            height: 45px;
+        }
 
-<br><br>
+        .cursor {
+            display: inline-block;
+            width: 4px;
+            background-color: var(--accent-glow);
+            animation: blink 0.8s infinite;
+        }
 
- 
+        .hero p {
+            max-width: 600px;
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 0 auto 3rem auto;
+            color: var(--text-secondary);
+        }
 
-   
-   
-**Hope I get a Chance to Help you too 🙏🙏**
+        .btn-group {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
 
-### MAIL : **Sakshamgairola21@gmail.com** (24*7 Online)
-   
-### Behance Profile : [LINK](https://www.linkedin.com/in/saksham-gairola-963881194)
+        .btn {
+            padding: 15px 35px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
 
- <img src="https://media.giphy.com/media/3oFzm9ZDwguOVj4O7m/giphy.gif" alt="Coder GIF" width="80" height="150" align="right">  
- <img src="https://media.giphy.com/media/UrzZ4TmQK17yJpYPIL/giphy.gif" alt="Coder GIF" width="250" height="150" align="center">                                          <p color="#ff0000"> 
- Thank you so much for <img src="https://media.giphy.com/media/AEMgXCqNwfxvbNWVCt/giphy.gif" width="20px">visiting.
-  </p>
+        .btn-primary {
+            background: transparent;
+            color: var(--accent-glow);
+            border: 2px solid var(--accent-glow);
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--accent-glow);
+            color: var(--bg-color);
+            box-shadow: 0 0 30px rgba(0, 255, 204, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--surface-color);
+            color: var(--text-primary);
+            border: 2px solid var(--card-border);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--accent-secondary);
+            box-shadow: 0 0 20px rgba(112, 0, 255, 0.4);
+        }
+
+        /* --- Skills Grid --- */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .skill-card {
+            background: var(--surface-color);
+            border: 1px solid var(--card-border);
+            padding: 2.5rem;
+            border-radius: 15px;
+            text-align: center;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: -100%;
+            width: 100%; height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.05), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .skill-card:hover::before {
+            left: 100%;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--accent-glow);
+            box-shadow: 0 10px 30px rgba(0, 255, 204, 0.15);
+        }
+
+        .skill-card i {
+            font-size: 3rem;
+            color: var(--accent-glow);
+            margin-bottom: 1.5rem;
+        }
+
+        .skill-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .skill-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* --- Projects Section --- */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        .project-card {
+            background: var(--surface-color);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid var(--card-border);
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.02);
+            border-color: var(--accent-secondary);
+            box-shadow: 0 0 25px rgba(112, 0, 255, 0.2);
+        }
+
+        .project-img {
+            width: 100%;
+            height: 200px;
+            background: #222; /* Placeholder for images */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: #333;
+        }
+
+        .project-info {
+            padding: 2rem;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-info p {
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            line-height: 1.5;
+        }
+
+        .tag-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            font-size: 0.8rem;
+            padding: 5px 12px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            color: var(--accent-glow);
+        }
+
+        /* --- Animations --- */
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* --- Floating Elements --- */
+        .mouse-icon {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 50px;
+            border: 2px solid var(--text-secondary);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            padding-top: 10px;
+        }
+
+        .mouse-wheel {
+            width: 4px;
+            height: 8px;
+            background: var(--accent-glow);
+            border-radius: 2px;
+            animation: scroll 1.5s infinite;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(15px); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-animation"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+        <h1>Saksham Gairola</h1>
+        <div class="typewriter-container">
+            I am a <span id="typewriter"></span><span class="cursor">&nbsp;</span>
+        </div>
+        <p>
+            An engineer and creative bridging the gap between high-performance code, striking UI/UX, and data-driven marketing. Specializing in scaling e-commerce platforms and integrating advanced AI workflows.
+        </p>
+        <div class="btn-group">
+            <a href="https://saksham.webzineworld.in/" class="btn btn-primary" target="_blank">View Full Portfolio</a>
+            <a href="#skills" class="btn btn-secondary">Explore Skills</a>
+        </div>
+        
+        <div class="mouse-icon">
+            <div class="mouse-wheel"></div>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2 class="section-title">Core Architecture</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-hubspot"></i>
+                <h3>CMS Development</h3>
+                <p>Architecting custom themes, modules, and landing pages across HubSpot CMS, WordPress, Divi, and Elementor ecosystems.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Engineering</h3>
+                <p>Developing responsive, lightning-fast interfaces using modern HTML, CSS, JavaScript, and dynamic framework integrations.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>E-Commerce & Marketing</h3>
+                <p>Scaling brands, managing product sales funnels, executing digital marketing campaigns, and deploying affiliate strategies.</p>
+            </div>
+            <div class="skill-card">
+                <i class="fa-solid fa-robot"></i>
+                <h3>AI & Automation</h3>
+                <p>Leveraging the latest AI tools to streamline design iterations, automate content generation, and optimize technical workflows.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+        <h2 class="section-title">Digital Ventures</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="project-info">
+                    <h3>WebzineWorld Ecosystem</h3>
+                    <p>Designed and developed the structural framework and corporate identity for an end-to-end e-commerce product selling platform.</p>
+                    <div class="tag-container">
+                        <span class="tag">E-Commerce</span>
+                        <span class="tag">UI/UX</span>
+                        <span class="tag">Marketing</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fa-solid fa-server"></i>
+                </div>
+                <div class="project-info">
+                    <h3>HubSpot Custom Infrastructure</h3>
+                    <p>Built out a technical custom website theme, resolving compiler errors and assembling intricate design manager files and page templates.</p>
+                    <div class="tag-container">
+                        <span class="tag">HubSpot CMS</span>
+                        <span class="tag">Development</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">
+                    <i class="fa-solid fa-video"></i>
+                </div>
+                <div class="project-info">
+                    <h3>Digital Media Branding</h3>
+                    <p>Generated multi-platform promotional assets, custom banner designs, and algorithmic SEO tags for behavioral psychology and narrative channels.</p>
+                    <div class="tag-container">
+                        <span class="tag">Graphic Design</span>
+                        <span class="tag">Content Strategy</span>
+                        <span class="tag">AI Tools</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS FOR ANIMATIONS -->
+    <script>
+        // --- Typewriter Effect ---
+        const roles = [
+            "Software Engineer.",
+            "Web Developer.",
+            "E-Commerce Strategist.",
+            "UI/UX Designer.",
+            "Digital Marketer."
+        ];
+        
+        let roleIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typewriterElement = document.getElementById("typewriter");
+
+        function type() {
+            const currentRole = roles[roleIndex];
+            
+            if (isDeleting) {
+                typewriterElement.textContent = currentRole.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typewriterElement.textContent = currentRole.substring(0, charIndex + 1);
+                charIndex++;
+            }
+
+            let typeSpeed = isDeleting ? 40 : 80;
+
+            if (!isDeleting && charIndex === currentRole.length) {
+                typeSpeed = 2000; 
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                roleIndex = (roleIndex + 1) % roles.length;
+                typeSpeed = 400; 
+            }
+            setTimeout(type, typeSpeed);
+        }
+
+        window.onload = () => {
+            type();
+            // Trigger observer on load for elements already in view
+            document.querySelectorAll('section').forEach(sec => observer.observe(sec));
+        };
+
+        // --- Scroll Reveal Animation ---
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.2
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+    </script>
+</body>
+</html>
